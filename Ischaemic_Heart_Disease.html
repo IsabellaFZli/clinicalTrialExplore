@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ischaemic Heart Disease</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 240px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.flex-item {
+  width: 48%;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a class="w3-bar-item w3-button w3-theme-l1">Exploring Globalization of Clinical Trials</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+    <div class="w3-bar w3-light-grey">
+      <a href="index.html" class="w3-bar-item w3-button">Overview</a>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">Top 10 Causes of Death</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="Ischaemic_Heart_Disease.html" class="w3-bar-item w3-button">Ischaemic Heart Disease</a>
+      <a href="Stroke.html" class="w3-bar-item w3-button">Stroke</a>
+      <a href="Chronic_Obstructive_Pulmonary_Disease.html" class="w3-bar-item w3-button">Chronic Obstructive Pulmonary Disease</a>
+      <a href="Lower_Respiratory_Infections.html" class="w3-bar-item w3-button">Lower Respiratory Infections</a>
+      <a href="Neonatal_Conditions.html" class="w3-bar-item w3-button">Neonatal Conditions</a>
+      <a href="Trachea_Bronchus_Lung_Cancers.html" class="w3-bar-item w3-button">Trachea, Bronchus, Lung Cancers</a>
+      <a href="Alzheimer's_Disease_and_Other_Dementias.html" class="w3-bar-item w3-button">Alzheimer's Disease and Other Dementias</a>
+      <a href="Diarrhoeal_Diseases.html" class="w3-bar-item w3-button">Diarrhoeal Diseases</a>
+      <a href="Diabetes_Mellitus.html" class="w3-bar-item w3-button">Diabetes Mellitus</a>
+      <a href="Kidney_Diseases.html" class="w3-bar-item w3-button">Kidney Diseases</a>
+    </div>
+  </div>
+</div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-right w3-container">
+      <h1 class="w3-text-teal">Ischaemic Heart Disease</h1>
+      <p>Ischaemic Heart Disease (IHD), also known as Coronary Artery Disease (CAD), is a condition characterized by reduced blood 
+        flow to the heart muscle due to the build-up of fatty deposits (plaque) in the coronary arteries. This can lead to chest 
+        pain (angina), shortness of breath, and other symptoms. In severe cases, it can result in a heart attack. IHD is one of the 
+        leading causes of death worldwide, but it is often preventable through lifestyle changes, medication, and in some cases, 
+        surgical interventions. Early detection and management are crucial for improving outcomes and quality of life for those affected by this disease.</p>
+    </div>
+  </div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main">
+
+    <div class="w3-row">
+        <div class="w3-container">
+            <h1 class="w3-text-teal">Clinical Trial Distribution</h1>
+            <div class="flex-container">
+            <div class="flex-item">
+              <p>The map on the right provides a general overview of the global distribution of clinical trials. 
+              It shows where clinical trials are taking place around the world, giving viewers an immediate sense of the geographic spread and the volume of trials in different regions. 
+              This visualization helps identify hotspots of clinical research and areas that might benefit from increased clinical trial activity. 
+              Then, the second map below delves into the details of international collaborations in clinical trials. 
+              It illustrates the specific countries involved in individual clinical trial projects, highlighting the global nature of these studies. 
+              By showing the collaborative efforts between different countries, this map underscores the importance of international partnerships in 
+              advancing medical research and ensuring diverse participation in clinical trials.</p>
+            </div>
+            <div class="flex-item">
+                <!-- MapG Tableau -->
+                <div class='tableauPlaceholder' id='viz1721112373808' style='position: relative; width: 100%; height: 400px;'>
+                    <noscript>
+                        <a href='#'>
+                            <img alt='Clinical Trial Distribution' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Is&#47;Ischaemic_Heart_Disease&#47;Map_General&#47;1_rss.png' style='border: none' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz' style='width: 100%; height: 100%;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='site_root' value='' />
+                        <param name='name' value='Ischaemic_Heart_Disease&#47;Map_General' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Is&#47;Ischaemic_Heart_Disease&#47;Map_General&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                        <param name='filter' value='publish=yes' />
+                    </object>
+                </div>                
+                <script type='text/javascript'>                    
+                    var divElement = document.getElementById('viz1721112373808');                    
+                    var vizElement = divElement.getElementsByTagName('object')[0];                    
+                    vizElement.style.width='100%';vizElement.style.height='100%';                    
+                    var scriptElement = document.createElement('script');                    
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                </script>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-padding-64">
+      <!-- MapG Tableau -->
+      <div class='tableauPlaceholder' id='viz1721113890350' style='position: relative; width: 1150px; height: 700px;'>
+        <noscript>
+            <a href='#'>
+                <img alt='12-week Open-label, Phase IIIb Comparing Efficacy and Safety of Rosuvastatin (CRESTOR™) in Combination With Ezetimibe' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Is&#47;Ischaemic_Heart_Disease&#47;Map_Details&#47;1_rss.png' style='border: none' />
+            </a>
+        </noscript>
+        <object class='tableauViz' style='width: 1150px; height: 700px;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> 
+            <param name='site_root' value='' />
+            <param name='name' value='Ischaemic_Heart_Disease&#47;Map_Details' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Is&#47;Ischaemic_Heart_Disease&#47;Map_Details&#47;1.png' /> 
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+            <param name='filter' value='publish=yes' />
+        </object>
+    </div>                
+    <script type='text/javascript'>                    
+        var divElement = document.getElementById('viz1721113890350');                    
+        var vizElement = divElement.getElementsByTagName('object')[0];                    
+        vizElement.style.width='1150px';vizElement.style.height='700px';                    
+        var scriptElement = document.createElement('script');                    
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
+    
+
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-right w3-container w3-padding-64">
+      <h1 class="w3-text-teal">Further Analysis</h1>
+      <p>In this section, we delve into the intricate details of clinical trial data to provide valuable insights into the evolving landscape of medical research. 
+        Through a series of detailed graphs, we explore the changes in single and multi-country trials over the decades, 
+        regional trends in clinical trial participation, the average number of countries involved in trials, 
+        and the distribution of countries involved per trial. By examining these key metrics, we aim to highlight significant trends, uncover patterns of international 
+        collaboration, and identify areas for potential growth and improvement in the conduct of clinical trials worldwide. 
+        Now let's navigate through the data to better understand the dynamics and impact of global clinical research efforts.</p>
+    </div>
+    
+    <div class="w3-row w3-padding-64">
+      <div class="w3-container">
+        <div class="flex-container">
+        <div class="flex-item">
+        <!-- sing_mul_change_by_decade Tableau -->
+        <div class='tableauPlaceholder' id='viz1721151888316' style='position: relative; width: 600px; height: 400px;'>
+          <noscript>
+            <a href='#'>
+            <img alt='Collaboration Changes ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Is&#47;Ischaemic_Heart_Disease&#47;sing_mul_change_by_decade&#47;1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz'  style='width: 600px; height: 400px;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+          <param name='embed_code_version' value='3' /> 
+          <param name='site_root' value='' />
+          <param name='name' value='Ischaemic_Heart_Disease&#47;sing_mul_change_by_decade' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Is&#47;Ischaemic_Heart_Disease&#47;sing_mul_change_by_decade&#47;1.png' /> 
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+          <param name='filter' value='publish=yes' />
+        </object>
+      </div>                
+      <script type='text/javascript'>                    
+      var divElement = document.getElementById('viz1721151888316');                    
+      var vizElement = divElement.getElementsByTagName('object')[0];                    
+      vizElement.style.width='600px';vizElement.style.height='400px';                    
+      var scriptElement = document.createElement('script');                    
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+      </script>
+      </div>
+      <div class="flex-item">
+        <p>This graph shows a marked increase in both single-country and multi-country clinical trials starting in the 1990s, 
+          with single-country trials peaking at 246 and multi-country trials peaking at 122 in the 2000s. 
+          However, both types of trials experienced a decline in the following decades, 
+          with single-country trials dropping to 190 in the 2010s and 8 in the 2020s, 
+          and multi-country trials decreasing to 62 in the 2010s and 8 in the 2020s. 
+          Before the 1990s, the number of trials for both categories was relatively low but showed a steady increase.</p>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    
+    <div class="w3-row">
+      <div class="w3-container w3-padding-32">
+          <div class="flex-container">
+              <div class="flex-item">
+                  <p>The graph shows the trends in clinical trials across different regions from 1980 to 2020. 
+                      North America had a significant peak in the 2000s with 171 trials, but this dropped sharply to 12 trials in the 2010s and 1 trial in the 2020s. 
+                      Central Europe also saw a peak in the 2000s with 94 trials, increasing to 100 in the 2010s, and then declining to 5 in the 2020s. 
+                      Western Europe experienced a peak of 88 trials in the 2000s, falling to 66 in the 2010s and 22 in the 2020s. Asia showed a consistent rise, 
+                      peaking at 42 trials in the 2000s, decreasing to 24 in the 2010s, and 9 in the 2020s. Other regions, including Latin America, Africa, the Middle East, 
+                      and Oceania, had lower counts overall, with the highest being Latin America with 68 trials in the 2010s.
+                  </p>
+              </div>
+              <div class="flex-item">
+                  <!-- region_change_by_decade Tableau -->
+                  <div class='tableauPlaceholder' id='viz1721153303877' style='position: relative; width: 100%; height: 400px;'>
+                      <noscript><a href='#'>
+                          <img alt='Region Changes ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Is&#47;Ischaemic_Heart_Disease&#47;region_change_by_decade&#47;1_rss.png' style='border: none' />
+                      </a></noscript>
+                      <object class='tableauViz' style='width: 100%; height: 100%;'>
+                          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                          <param name='embed_code_version' value='3' /> 
+                          <param name='site_root' value='' />
+                          <param name='name' value='Ischaemic_Heart_Disease&#47;region_change_by_decade' />
+                          <param name='tabs' value='no' />
+                          <param name='toolbar' value='yes' />
+                          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Is&#47;Ischaemic_Heart_Disease&#47;region_change_by_decade&#47;1.png' /> 
+                          <param name='animate_transition' value='yes' />
+                          <param name='display_static_image' value='yes' />
+                          <param name='display_spinner' value='yes' />
+                          <param name='display_overlay' value='yes' />
+                          <param name='display_count' value='yes' />
+                          <param name='language' value='en-US' />
+                          <param name='filter' value='publish=yes' />
+                      </object>
+                  </div>                
+                  <script type='text/javascript'>                    
+                      var divElement = document.getElementById('viz1721153303877');                    
+                      var vizElement = divElement.getElementsByTagName('object')[0];                    
+                      vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+                      var scriptElement = document.createElement('script');                    
+                      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                      vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                  </script>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+  <div class="w3-row">
+    <div class="w3-container w3-padding-32">
+        <div class="flex-container">
+            <div class="flex-item">
+                <!-- avg_country_ involved Tableau -->
+                <div class='tableauPlaceholder' id='viz1721153720100' style='position: relative'>
+                  <noscript>
+                    <a href='#'>
+                      <img alt='Countries Involves ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Is&#47;Ischaemic_Heart_Disease&#47;avg_country_involved&#47;1_rss.png' style='border: none' />
+                    </a>
+                  </noscript>
+                  <object class='tableauViz'  style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                    <param name='embed_code_version' value='3' /> 
+                    <param name='site_root' value='' />
+                    <param name='name' value='Ischaemic_Heart_Disease&#47;avg_country_involved' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Is&#47;Ischaemic_Heart_Disease&#47;avg_country_involved&#47;1.png' /> 
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                    <param name='filter' value='publish=yes' />
+                  </object></div>                
+                  <script type='text/javascript'>                    
+                  var divElement = document.getElementById('viz1721153720100');                    
+                  var vizElement = divElement.getElementsByTagName('object')[0];                    
+                  vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+                  var scriptElement = document.createElement('script');                    
+                  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                  vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                  </script>
+            </div>
+            <div class="flex-item">
+              <p>The graph on the left shows the average number of countries involved per clinical trial from 1960 to 2020. 
+                In the 1960s and 1970s, there were no trials involving multiple countries, as indicated by an average of 0.000. 
+                The 1980s saw a slight increase, with an average of 0.048 countries involved per trial. 
+                This number rose significantly in the 1990s to 0.455. The highest averages were observed in the 2000s and 2010s, 
+                with 2.780 and 2.837 countries involved per trial, respectively. In the 2020s, the average number of countries 
+                involved per trial decreased to 0.813.
+              </p>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="w3-row">
+  <div class="w3-container w3-padding-32">
+      <div class="flex-container">
+          <div class="flex-item">
+              <p>The graph on the right illustrates the distribution of clinical trials based on the number of countries involved. 
+                The majority of trials (847) involve between 0 and 5 countries, represented by the tallest bar. 
+                There is a significant drop for trials involving 5-10 countries, with 32 trials. 
+                The number of trials continues to decrease as the number of countries increases: 10 trials for 10-15 countries, 
+                15 trials for 15-20 countries, and 4 trials for 20-25 countries. The pattern remains consistent with very low counts for higher ranges, 
+                including 3 trials for 25-30 countries, 6 trials for 30-35 countries, and 3 trials for 35-40 countries. 
+                The highest ranges, 45-50 and 50-55 countries, have 2 trials each.
+              </p>
+          </div>
+          <div class="flex-item">
+              <!-- countries_invloved_per_trial Tableau -->
+              <div class='tableauPlaceholder' id='viz1721154051440' style='position: relative'>
+                <noscript>
+                  <a href='#'>
+                    <img alt='Countries Involved Per Trial ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Is&#47;Ischaemic_Heart_Disease&#47;countries_invloved_per_trial&#47;1_rss.png' style='border: none' />
+                  </a>
+                </noscript>
+                <object class='tableauViz'  style='display:none;'>
+                  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                  <param name='embed_code_version' value='3' /> 
+                  <param name='site_root' value='' />
+                  <param name='name' value='Ischaemic_Heart_Disease&#47;countries_invloved_per_trial' />
+                  <param name='tabs' value='no' />
+                  <param name='toolbar' value='yes' />
+                  <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Is&#47;Ischaemic_Heart_Disease&#47;countries_invloved_per_trial&#47;1.png' /> 
+                  <param name='animate_transition' value='yes' />
+                  <param name='display_static_image' value='yes' />
+                  <param name='display_spinner' value='yes' />
+                  <param name='display_overlay' value='yes' />
+                  <param name='display_count' value='yes' />
+                  <param name='language' value='en-US' />
+                  <param name='filter' value='publish=yes' />
+                </object>
+              </div>                
+              <script type='text/javascript'>                    
+              var divElement = document.getElementById('viz1721154051440');                    
+              var vizElement = divElement.getElementsByTagName('object')[0];                    
+              vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+              var scriptElement = document.createElement('script');                    
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+              </script>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
